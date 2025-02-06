@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Game Development Job Applying</title>
+</head>
+<body>
+    <h1>Job Application Form</h1>
+    <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+        <fieldset>
+            <legend>Position:</legend>
+            <p>Game Developer: GD123<br>Game Artist: GA456<br>Game Sound Designer: SD789</p>
+            <p><label for = "Position">Job reference number</label>
+            <input type="text" id="Position" name="position" required = "required" maxlength="5" size="10" pattern="[a-zA-Z0-9]+">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Personal Information:</legend>
+            <p><label for = "FirstName">First Name</label>
+                <input type="text" id="FirstName" name="First_Name" maxlength="20" size="40" required="required" pattern="[a-zA-Z ]+">
+            </p>
+            <p><label for = "LastName">Last Name</label>
+                <input type="text" id="LastName" name="Last_Name" maxlength="20" size="40" required="required" pattern="[a-zA-Z ]+">
+            </p>
+            <p><label for="DateOfBirth">Date Of Birth:</label>    
+                <input type="text" id="DateOfBirth" name="DOB" required="required" placeholder="dd/mm/yyyy" pattern="\d{2}/\d{2}/\d{4}">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Gender:</legend>
+            <p>
+                <label><input type="radio" name="Gender" value="Male" checked="checked" required = "required" >Male</label>
+                <label><input type="radio" name="Gender" value="Female" >Female</label>
+                <label><input type="radio" name="Gender" value="Others" >Others</label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Address</legend>
+            <p><label for="StreetAddress">Street Address</label>
+                <input type="text" id ="StreetAddress" name="Street_Address" maxlength="40" size="60" required="required" pattern="[a-zA-Z ]+">
+            </p>
+            <p><label for="SuburbTown">Suburb/town</label>
+                <input type="text" id ="SuburbTown" name="Suburb/town" maxlength="40" size="60" required="required" pattern="[a-zA-Z ]+">
+            </p>
+            <p><label for="State">State</label>
+                <label for="State">Select Your State</label>
+                <select name="state" id="State" required="required">
+                    <option value="">Please Select</option> 
+                    <option value="VIC">VIC</option>
+                    <option value="NSW">NSW</option>
+                    <option value="QLD">QLD</option>
+                    <option value="NT">NT</option>
+                    <option value="WA">WA</option>
+                    <option value="SA">SA</option>
+                    <option value="TAS">TAS</option>
+                    <option value="ACT">ACT</option>
+                </select>
+            </p>
+            <p><label for ="Postcode">Postcode</label>
+                <input type="text" id="Postcode" name="Postcode" maxlength="4" size="8" required="required" pattern="[0-9]+">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Contact:</legend>
+            <p><label for ="Email">Email address</label>
+                <input type="email" id="Email" name="Email" maxlength="40" size="80" required="required">
+            </p>
+            <p><label for ="Phone">Phone Number</label>
+                <input type="text" id="Phone" name="Phone_Number" maxlength="12" size="20" required="required" pattern="[0-9 ]{8,12}">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Skills:</legend>
+            <p>
+                <label for="Skills">Skill1</label>
+                <input type="checkbox" id="Skills" name="Skills[]" value="Skill1" checked="checked">
+                <label for="Skills">Skill2</label>
+                <input type="checkbox" id="Skills" name="Skills[]" value="Skill2">
+                <label for="Skills">Skill3</label>
+                <input type="checkbox" id="Skills" name="Skills[]" value="Skill3">
+                <label for="Skills">Skill4</label>
+                <input type="checkbox" id="Skills" name="Skills[]" value="Skill4">
+                <label for="Skills">Other skill</label>
+                <input type="checkbox" id="Skills" name="Skills[]" value="Other Skills">
+            </p>
+            <p>
+                <label for = "descriptionOfIssue">Description of Issue</label><br>
+                <textarea 
+                    id="descriptionOfIssue" 
+                    name="description" 
+                    rows="10" 
+                    cols="30" 
+                    placeholder="Write description of your problem here..."></textarea>
+            </p>
+        </fieldset>
+        <input type="submit" value="Apply">
+        <input type="reset" value="Reset form">
+    </form>
+</body>
+</html>
