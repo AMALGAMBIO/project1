@@ -64,7 +64,7 @@
         <fieldset>
             <legend>Contact:</legend>
             <p><label for ="Email">Email address</label>
-                <input type="email" id="Email" name="Email" maxlength="40" size="80" required="required">
+                <input type="email" id="Email" name="Email" maxlength="40" size="80" required="required" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
             </p>
             <p><label for ="Phone">Phone Number</label>
                 <input type="text" id="Phone" name="Phone_Number" maxlength="12" size="20" required="required" pattern="[0-9 ]{8,12}">
