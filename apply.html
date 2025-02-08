@@ -16,14 +16,14 @@
 <body>
     <h1>Job Application Form</h1>
     <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
-        <fieldset>
+        <fieldset><!--Position Form only text 5 alphanumberic-->
             <legend>Position:</legend>
             <p>Game Developer: GD123<br>Game Artist: GA456<br>Game Sound Designer: SD789</p>
             <p><label for = "Position">Job reference number</label>
             <input type="text" id="Position" name="position" required = "required" maxlength="5" size="10" pattern="[a-zA-Z0-9]+">
             </p>
         </fieldset>
-        <fieldset>
+        <fieldset><!--Personal Information name and DoB-->
             <legend>Personal Information:</legend>
             <p><label for = "FirstName">First Name</label>
                 <input type="text" id="FirstName" name="First_Name" maxlength="20" size="40" required="required" pattern="[a-zA-Z ]+">
@@ -35,7 +35,7 @@
                 <input type="text" id="DateOfBirth" name="DOB" required="required" placeholder="dd/mm/yyyy" pattern="\d{2}/\d{2}/\d{4}">
             </p>
         </fieldset>
-        <fieldset>
+        <fieldset><!--Gender Form radio-->
             <legend>Gender:</legend>
             <p>
                 <label><input type="radio" name="Gender" value="Male" checked="checked" required = "required" >Male</label>
@@ -43,7 +43,7 @@
                 <label><input type="radio" name="Gender" value="Others" >Others</label>
             </p>
         </fieldset>
-        <fieldset>
+        <fieldset><!--Adress street,surburb/town text and drop down menu state, postcode text and allow 4 number-->
             <legend>Address</legend>
             <p><label for="StreetAddress">Street Address</label>
                 <input type="text" id ="StreetAddress" name="Street_Address" maxlength="40" size="60" required="required" pattern="[a-zA-Z ]+">
@@ -69,7 +69,7 @@
                 <input type="text" id="Postcode" name="Postcode" maxlength="4" size="8" required="required" pattern="[0-9]+">
             </p>
         </fieldset>
-        <fieldset>
+        <fieldset><!--Contact mail and phone number(8-12 numberic with space)-->
             <legend>Contact:</legend>
             <p><label for ="Email">Email address</label>
                 <input type="email" id="Email" name="Email" maxlength="40" size="80" required="required" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
@@ -78,7 +78,7 @@
                 <input type="text" id="Phone" name="Phone_Number" maxlength="12" size="20" required="required" pattern="[0-9 ]{8,12}">
             </p>
         </fieldset>
-        <fieldset>
+        <fieldset><!--Skills check box with the last one being text area-->
             <legend>Skills:</legend>
             <p>
                 <label for="Skill1">Team Work</label>
