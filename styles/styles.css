@@ -1,1 +1,269 @@
+/*apply page css*/
 
+/*global varible for apply page*/
+:root {
+    --mainColor: #1d1d1d;
+    --textColor: #fff8e8;
+    --backgroundColor: #000000;
+    --borderColor: #00cc99;
+}
+/*global style*/
+.applypage{
+    font-family: Arial, sans-serif;
+    background-color: var(--backgroundColor);
+    margin: 0;
+    padding: 20px;
+    color: var(--textColor);
+}
+
+/*nav bar*/
+.applypage nav {
+    background: var(--mainColor);
+    margin: -20px -20px 32px -20px;
+    padding: 24px;
+    box-shadow: 0 2px 10px black;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+}
+
+.applypage nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.applypage nav li {
+    position: relative;
+    border: 2px dashed var(--borderColor);
+}
+
+.applypage nav a {
+    color: var(--textColor);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+/*nav animation*/
+/*make a underline*/
+.applypage nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--borderColor);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+/*effect*/
+.applypage nav a:hover {
+    color: var(--borderColor);
+}
+
+.applypage nav a:hover::after {
+    transform: scaleX(1);
+}
+
+/*h1*/
+.applypage h1 {
+    text-align: center;
+    color: var(--textColor);
+}
+
+/*form*/
+.applypage form {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+/*animated border*/
+.animatedborders {
+    position: relative;
+    padding: 3px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 32px;
+    z-index: 0;
+}
+
+.animatedborders::before{
+    content: '';
+    position: absolute;
+    top: 15%;
+    left: -50%;
+    width: 100%;
+    height: 40%;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.animatedborders:focus-within::before {
+    content: '';
+    position: absolute;
+    top: 15%;
+    left: -50%;
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(
+        0deg,
+        transparent,
+        transparent,
+        var(--borderColor),
+        var(--borderColor),
+        var(--borderColor)
+    );
+    animation: rotateBorders 6s linear infinite;
+    transform-origin: bottom right;
+    z-index: -1;
+}
+
+@keyframes rotateBorders {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.applypage fieldset {
+    background-color: rgba(0, 0, 0, 1);
+    border-radius: 12px;
+    padding: 32px;
+    margin: 0;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    transform: scale(0.98);
+    border: 2px solid var(--borderColor);
+}
+
+.applypage fieldset legend {
+    padding: 0 10px;
+    margin-left: 20px;
+    background-color: var(--backgroundColor);
+    border: 2px solid var(--borderColor);
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.applypage fieldset:focus-within {
+    transform: scale(1);
+    background-color: var(--mainColor);
+    border: none;
+}
+.applypage fieldset:focus-within legend {
+    opacity: 1;
+    height: 0;
+    visibility: show;
+    margin: 0;
+    padding: 0;
+}
+
+.applypage .form-group {
+    margin-bottom: 1rem;
+}
+
+.applypage label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--textColor);
+    font-weight: 500;
+}
+
+.applypage input[type="text"],
+.applypage input[type="email"],
+.applypage select,
+.applypage textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--borderColor);
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.applypage input[type="text"]:focus,
+.applypage input[type="email"]:focus,
+.applypage select:focus,
+.applypage textarea:focus {
+    outline: none;
+    border-color: var(--borderColor);
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.1);
+}
+
+.applypage input[type="submit"],
+.applypage input[type="reset"] {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.applypage input[type="submit"] {
+    background-color: var(--borderColor);
+    color: white;
+}
+
+.applypage input[type="submit"]:hover {
+    background-color: var(--mainColor);
+}
+
+.applypage input[type="reset"] {
+    background-color: var(--borderColor);
+    color: var(--textColor);
+}
+
+.applypage input[type="reset"]:hover {
+    background-color: var(--mainColor);
+}
+
+.applypage input:required {
+    border-left: 3px solid var(--mainColor);
+}
+
+.applypage input:invalid {
+    border-color: var(--mainColor);
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .applypage {
+        padding: 1rem;
+    }
+
+    .applypage fieldset {
+        padding: 1.5rem;
+    }
+
+    .applypage .radio-group {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .applypage .button-group {
+        flex-direction: column;
+    }
+
+    .applypage input[type="submit"],
+    .applypage input[type="reset"] {
+        width: 100%;
+    }
+}

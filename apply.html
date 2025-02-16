@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+<head class="applypage">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -10,19 +11,22 @@
           <li><a href="apply.html">Apply</a></li>
           <li><a href="about.html">About Us</a></li>
         </ul>
-      </nav>
+    </nav>
     <title>Game Development Job Applying</title>
 </head>
-<body>
+<body class="applypage">
     <h1>Job Application Form</h1>
     <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+        <div class="animatedborders">
         <fieldset><!--Position Form only text 5 alphanumberic-->
             <legend>Position:</legend>
             <p>Game Developer: GD123<br>Game Artist: GA456<br>Game Sound Designer: SD789</p>
             <p><label for = "Position">Job reference number</label>
-            <input type="text" id="Position" name="position" required = "required" maxlength="5" size="10" pattern="[a-zA-Z0-9]+">
+            <input type="text" id="Position" name="position" required = "required" maxlength="5" size="10" pattern="[a-zA-Z0-9]+" >
             </p>
         </fieldset>
+        </div>
+        <div class="animatedborders">
         <fieldset><!--Personal Information name and DoB-->
             <legend>Personal Information:</legend>
             <p><label for = "FirstName">First Name</label>
@@ -35,6 +39,8 @@
                 <input type="text" id="DateOfBirth" name="DOB" required="required" placeholder="dd/mm/yyyy" pattern="\d{2}/\d{2}/\d{4}">
             </p>
         </fieldset>
+        </div>
+        <div class="animatedborders">
         <fieldset><!--Gender Form radio-->
             <legend>Gender:</legend>
             <p>
@@ -43,6 +49,8 @@
                 <label><input type="radio" name="Gender" value="Others" >Others</label>
             </p>
         </fieldset>
+        </div>
+        <div class="animatedborders">
         <fieldset><!--Adress street,surburb/town text and drop down menu state, postcode text and allow 4 number-->
             <legend>Address</legend>
             <p><label for="StreetAddress">Street Address</label>
@@ -69,6 +77,8 @@
                 <input type="text" id="Postcode" name="Postcode" maxlength="4" size="8" required="required" pattern="[0-9]+">
             </p>
         </fieldset>
+        </div>
+        <div class="animatedborders">
         <fieldset><!--Contact mail and phone number(8-12 numberic with space)-->
             <legend>Contact:</legend>
             <p><label for ="Email">Email address</label>
@@ -78,19 +88,21 @@
                 <input type="text" id="Phone" name="Phone_Number" maxlength="12" size="20" required="required" pattern="[0-9 ]{8,12}">
             </p>
         </fieldset>
+        </div>
+        <div class="animatedborders">
         <fieldset><!--Skills check box with the last one being text area-->
             <legend>Skills:</legend>
             <p>
                 <label for="Skill1">Team Work</label>
-                <input type="checkbox" id="Skills" name="Skills[]" value="Team_Work" checked="checked">
+                <input type="checkbox" id="Skill1" name="Skills[]" value="Team_Work" checked="checked"><br>
                 <label for="Skill2">Time Management</label>
-                <input type="checkbox" id="Skills" name="Skills[]" value="Time_Management">
+                <input type="checkbox" id="Skill2" name="Skills[]" value="Time_Management"><br>
                 <label for="Skill3">Communication</label>
-                <input type="checkbox" id="Skills" name="Skills[]" value="Communication">
+                <input type="checkbox" id="Skill3" name="Skills[]" value="Communication"><br>
                 <label for="Skill4">Problem-Solving</label>
-                <input type="checkbox" id="Skills" name="Skills[]" value="Problem-Solving">
+                <input type="checkbox" id="Skill4" name="Skills[]" value="Problem-Solving"><br>
                 <label for="Skill5">Adaptability</label>
-                <input type="checkbox" id="Skills" name="Skills[]" value="Adaptability">
+                <input type="checkbox" id="Skill5" name="Skills[]" value="Adaptability"><br>
             </p>
             <p>
                 <label for = "Otherskill">Others Skill</label><br>
@@ -102,6 +114,7 @@
                     placeholder="Write your skill here"></textarea>
             </p>
         </fieldset>
+        </div>
         <input type="submit" value="Apply">
         <input type="reset" value="Reset form">
     </form>
