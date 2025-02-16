@@ -1,0 +1,346 @@
+/* Global Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    background: black;
+}
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    z-index: 1000;
+    animation: reveal 0.2s ease-in-out forwards;
+}
+
+@keyframes reveal {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0;
+    }
+}
+
+/* Background Slideshow */
+.background-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    animation: background-slideshow 18s infinite;
+    background-size: cover;
+    background-position: center;
+}
+
+@keyframes background-slideshow {
+    0%   { background-image: url('images/image1.jpg'); }
+    16%  { background-image: url('images/image2.png'); }
+    32%  { background-image: url('images/image3.jpg'); }
+    48%  { background-image: url('images/image4.png'); }
+    64%  { background-image: url('images/image5.png'); }
+    80%  { background-image: url('images/image6.jpg'); }
+    100% { background-image: url('images/image1.jpg'); }
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* Navigation Bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    position: relative;
+    background: black;
+}
+
+.company-title {
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 5px solid #00cc99;
+    padding-bottom: 10px;
+}
+
+.vision-label {
+    position: absolute;
+    left: 5%;
+    top: 66%;
+    transform: rotate(-90deg);
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.page-indicator {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.content {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 70%;
+    text-align: left;
+}
+
+.content h1 {
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.content p {
+    font-size: 22px;
+    line-height: 1.4;
+}
+
+/* Staff Section */
+.staff-section {
+    background: black;
+    padding: 100px 0;
+    color: white;
+    text-align: center;
+}
+
+/* Title */
+.staff-title {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+/* Grid Layout */
+/* Staff Container */
+.staff-container {
+    display: flex;
+    justify-content: center; /* Centers items horizontally */
+    flex-wrap: wrap; /* Ensures responsiveness */
+    gap: 40px; /* Creates spacing between cards */
+    max-width: 90%; /* Limits width for better centering */
+    margin: 0 auto; /* Centers the container itself */
+}
+
+/* Individual Staff Cards */
+/* Staff Card with Glowing Border */
+/* Staff Card (No Glow by Default) */
+.staff-card {
+    background: black;
+    border-radius: 10px;
+    padding: 30px;
+    width: 320px; /* Keeping a balanced size */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    border: 2px solid #00cc99;
+    box-shadow: none; /* No glow by default */
+}
+
+/* Glowing Effect on Hover */
+.staff-card:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 15px #00cc99, 0 0 30px #00ffb3;
+}
+
+/* Profile Picture */
+.staff-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #00cc99;
+}
+
+/* Name */
+.staff-card h1 {
+    font-size: 24px;
+    color: #f8f8f8;
+}
+
+/* Position */
+.staff-card h3 {
+    font-size: 18px;
+    color: #00cc99;
+    margin-bottom: 10px;
+}
+
+/* Text Formatting */
+.staff-card p {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+/* Contact Links */
+.staff-card a {
+    color: #00cc99;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.staff-card a:hover {
+    color: #fff;
+}
+
+/* Full-screen light blue overlay */
+.overlayblue {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: lightblue;
+    z-index: 9999;
+    animation: slideAway 1.0s ease-out forwards;
+}
+
+/* Keyframe animation */
+@keyframes slideAway {
+    0% {
+        width: 100%;
+    }
+    100% {
+        width: 0%;
+    }
+}
+
+/* Timeline Section */
+.timeline-section {
+    background: black;
+    padding: 80px 0;
+    color: white;
+    text-align: center;
+}
+
+/* Title */
+.timeline-title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+/* Timeline Container */
+.timeline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Timeline Horizontal Line */
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #00cc99;
+    z-index: -1;
+}
+
+/* Timeline Item */
+.timeline-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    margin: 40px 20px;
+    position: relative;
+}
+
+/* Circular Event Marker */
+.timeline-circle {
+    width: 70px;
+    height: 70px;
+    background: #00cc99;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 0 0 15px #00cc99;
+}
+
+/* Event Content Box */
+.timeline-content {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease, background 0.3s ease;
+    opacity: 0.9;
+}
+
+/* Hover Effect */
+.timeline-content:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+/* Top Events */
+.timeline-content.top {
+    margin-bottom: 20px;
+}
+
+/* Bottom Events */
+.timeline-content.bottom {
+    margin-top: 20px;
+}
+
+
+
