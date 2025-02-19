@@ -162,14 +162,14 @@ main {
   display: flex;
   padding: 2rem;
   gap: 2rem;
-  max-width: 1900px;
+  max-width: 1980px;
   margin: 0 auto;
   min-height: calc(100vh - 180px);
 }
 
 .job-listings {
   flex: 1;
-  min-width: 1020px;
+  min-width: 820px;
 }
 
 .job-card {
