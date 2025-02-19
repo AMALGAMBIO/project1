@@ -121,17 +121,17 @@ body {
 
 /* Hero Section */
 .hero-section {
-  height: 150vh;
+  height: 175vh;
   position: relative;
   background: black;
 }
 
 .company-title {
   position: absolute;
-  top: 33%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 75px;
+  font-size: 100px;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
