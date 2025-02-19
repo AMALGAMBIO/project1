@@ -41,25 +41,25 @@ body {
 
 @keyframes background-slideshow {
   0% {
-    background-image: url("images/image1.jpg");
+    background-image: url("styles/images/image1.jpg");
   }
   16% {
-    background-image: url("images/image2.png");
+    background-image: url("styles/images/image2.png");
   }
   32% {
-    background-image: url("images/image3.jpg");
+    background-image: url("styles/images/image3.jpg");
   }
   48% {
-    background-image: url("images/image4.png");
+    background-image: url("styles/images/image4.png");
   }
   64% {
-    background-image: url("images/image5.png");
+    background-image: url("styles/images/image5.png");
   }
   80% {
-    background-image: url("images/image6.jpg");
+    background-image: url("styles/images/image6.jpg");
   }
   100% {
-    background-image: url("images/image1.jpg");
+    background-image: url("styles/images/image1.jpg");
   }
 }
 
