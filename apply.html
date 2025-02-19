@@ -11,6 +11,7 @@
       <a href="index.html">Home</a>
       <a href="apply.html">Apply</a>
       <a href="jobs.html">Jobs</a>
+      <a href="enhancements.html">Enhance</a>
       <a href="about.html">About Us</a>
       <a class="icon" href="#"
         ><img src="styles/images/twitter_icon.png" alt="X" width="20"
@@ -52,7 +53,7 @@
           </p>
         </fieldset>
       </div>
-      <div class="animatedborders">
+      <div class="animatedborders" id="personal_info" >
         <fieldset>
           <!--Personal Information name and DoB-->
           <legend>Personal Information</legend>
@@ -93,9 +94,9 @@
               pattern="\d{2}/\d{2}/\d{4}"
             />
           </p>
-          <p>
+          <p id="genders">
             <label for="gender">Gender</label>
-            <div class="gender-options">
+            <div class="gender-options" >
               <input type="radio" id="male" name="Gender" value="Male" checked="checked" required />
               <label for="male">Male</label>
           
@@ -169,7 +170,7 @@
         </fieldset>
       </div>
       <div class="animatedborders">
-        <fieldset class="skills-section">
+        <fieldset class="skills-section" id="skills">
           <legend>Skills</legend>
           
           <div class="skill-item">
