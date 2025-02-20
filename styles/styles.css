@@ -1673,8 +1673,8 @@
 .enhancepage .form-demo input {
   width: 100%;
   padding: 12px 16px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 2px solid rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 1);
+  border: 2px solid var(--borderColor);
   border-radius: 8px;
   font-size: 16px;
   color: var(--textColor);
