@@ -1015,6 +1015,158 @@
     width: 100%;
   }
 }
+.applypage .footer {
+  background-color: var(--backgroundColor);
+  color: #fff8e8;
+  padding: 40px 0;
+  font-family: "Inter", Arial, sans-serif;
+  box-shadow: 0 5px 25px var(--shadowColor);
+}
+
+.applypage .footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.applypage .footer-section h3 {
+  color: #00cc99;
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.applypage .footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.applypage .footer-section li {
+  margin-bottom: 12px;
+}
+
+.applypage .footer-section a {
+  color: #a0a0a0;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.applypage .footer-section a:hover {
+  color: #00cc99;
+}
+.applypage .download-section {
+  margin-top: 20px;
+}
+
+.applypage .app-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.applypage .app-buttons img {
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.applypage .app-buttons img:hover {
+  transform: translateY(-2px);
+}
+
+.applypage .social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+.applypage .social-icons img {
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+.applypage .social-icons a {
+  color: #fff8e8;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.applypage .social-icons a:hover {
+  color: #00cc99;
+}
+
+.applypage .footer-bottom {
+  background-color: var(--backgroundColor);
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 12px;
+  color: #a0a0a0;
+}
+
+.applypage .footer-bottom p {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+@media (max-width: 1024px) {
+  .applypage .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .applypage .footer-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1200px) {
+  .applypage main {
+    flex-direction: column;
+  }
+
+  .applypage .job-listings {
+    min-width: auto;
+  }
+
+  .applypage .description-panel {
+    width: 100%;
+  }
+
+  .applypage .description-content {
+    flex-direction: column;
+  }
+
+  .applypage .desc-column:first-child {
+    border-right: none;
+    border-bottom: 1px solid var(--borderColor);
+  }
+
+  .applypage .footer-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .applypage h1 {
+    font-size: 2rem;
+  }
+
+  .applypage .navbar {
+    flex-wrap: wrap;
+  }
+
+  .applypage .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 
 /* Jobs Page */
 .jobspage * {
