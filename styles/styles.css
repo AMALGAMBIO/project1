@@ -1976,43 +1976,6 @@
   animation: background-slideshow 18s infinite;
 }
 
-@keyframes background-slideshow {
-  0%,
-  16.66% {
-    background-image: url("images/image1.jpg");
-    opacity: 1;
-  }
-  20.83%,
-  37.49% {
-    background-image: url("images/image2.png");
-    opacity: 1;
-  }
-  41.66%,
-  58.32% {
-    background-image: url("images/image3.jpg");
-    opacity: 1;
-  }
-  62.49%,
-  79.15% {
-    background-image: url("images/image4.png");
-    opacity: 1;
-  }
-  83.32%,
-  100% {
-    background-image: url("images/image6.jpg");
-    opacity: 1;
-  }
-  16.66%,
-  20.83%,
-  37.49%,
-  41.66%,
-  58.32%,
-  62.49%,
-  79.15%,
-  83.32% {
-    opacity: 0.3;
-  }
-}
 
 .enhancepage .slideshow-overlay {
   position: absolute;
