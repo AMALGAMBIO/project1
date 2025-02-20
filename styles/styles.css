@@ -2505,6 +2505,34 @@
 .aboutpage .staff-card a:hover {
   color: #fff;
 }
+.aboutpage .team-section {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.aboutpage .team-card {
+  background: black;
+  border-radius: 10px;
+  padding: 30px;
+  width: 60%;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 5px 25px rgba(0, 255, 150, 0.3);
+}
+
+
+.aboutpage .team-card:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 15px #00cc99, 0 0 30px #00ffb3;
+}
+
+.aboutpage .team-photo {
+  width: 70%;
+  border-radius: 10px;
+  border: 3px solid #00cc99;
+}
 
 /* Full-screen light blue overlay */
 .aboutpage .overlayblue {
