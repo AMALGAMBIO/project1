@@ -946,6 +946,7 @@
   font-weight: 500;
   cursor: pointer;
   transition: background-color 0.3s;
+  color: #f8f8f8;
 }
 
 .applypage input[type="submit"]::before,
