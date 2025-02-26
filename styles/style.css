@@ -972,7 +972,7 @@
 
 .applypage input[type="submit"] {
   background-color: var(--borderColor);
-  color: white;
+  color: #f8f8f8;
 }
 
 .applypage input[type="submit"]:hover {
@@ -981,7 +981,7 @@
 
 .applypage input[type="reset"] {
   background-color: var(--borderColor);
-  color: var(--textColor);
+   color: #f8f8f8;
 }
 
 .applypage input[type="reset"]:hover {
