@@ -971,7 +971,7 @@
 }
 
 .applypage input[type="submit"] {
-  background-color: var(--borderColor);
+  background: linear-gradient(135deg, var(--gradientStart), var(--gradientEnd));
   color: #f8f8f8;
 }
 
@@ -980,7 +980,7 @@
 }
 
 .applypage input[type="reset"] {
-  background-color: var(--borderColor);
+  background: linear-gradient(135deg, var(--gradientStart), var(--gradientEnd));
    color: #f8f8f8;
 }
 
